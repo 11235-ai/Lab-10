@@ -27,7 +27,11 @@ class Speech:
 
 class Recognize:
     def __init__(self):
-        model = vosk.Model('model_small')
+        model = vosk.Model('vosk-model-small-ru-0.22') #vosk-model-small-ru-0.22 /   model_small   / vosk-model-ru-0.10
+        #model = r"C:\Users\G I G A B Y T E\Desktop\ITMO\Мехатроника и робототехника\1 Курс\Программирование на Python\Python\Семестр 2\Lab10\Lab-10\vosk-model-ru-0.10"
+
+
+
         self.record = vosk.KaldiRecognizer(model, 16000)
         self.stream()
 
