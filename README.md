@@ -27,8 +27,6 @@
 Сайт https://api.dictionaryapi.dev/api/v2/entries/en/<слово (англ.)> Ввести команду "find <слово>" на поиск информации по сказанному слову. Примеры команд: "save", "meaning" (сказать значение), "link" (открыть ссылку в браузере), "example" (сказать пример). Ассистент может быть только англоязычным. Выполняется **вместо** основного задания.
 
 **Полезные ссылки**
-
-Голосовая модель VOSK для русского языка (компактная): https://disk.yandex.ru/d/BB6pZZSfqLsW4Q  
-Голосовая модель VOSK для английского языка (компактная): https://disk.yandex.ru/d/1MZmmgyvXRgbvg  
-Другие голосовые модели: https://alphacephei.com/vosk/models  
+ 
+Голосовые модели для VOSK: https://alphacephei.com/vosk/models  
 О создании голосовых ассистентов: https://temofeev.ru/info/articles/sozdanie-golosovogo-assistenta-na-python-chast-1/
