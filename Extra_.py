@@ -8,7 +8,7 @@ import os
 import sys
 import webbrowser
 
-# ---------------- Speech ----------------
+
 class Speech:
     def __init__(self, lang='en'):
         self.tts = pyttsx3.init()
@@ -27,7 +27,6 @@ class Speech:
         self.tts.say(text)
         self.tts.runAndWait()
 
-# ---------------- Recognizer ----------------
 class Recognizer:
     def __init__(self, model_path, rate=16000, buffer=8000):
         if not os.path.exists(model_path):
@@ -58,7 +57,7 @@ class Recognizer:
         except KeyboardInterrupt:
             return
 
-# ---------------- Dictionary API ----------------
+
 class DictionaryAPI:
     BASE_URL = 'https://api.dictionaryapi.dev/api/v2/entries/en/'
 
@@ -114,7 +113,7 @@ class DictionaryAPI:
         url = f"{self.BASE_URL}{word}"
         return url, None
 
-# ---------------- Main ----------------
+
 # Commands in English and Russian
 COMMANDS = {
     'save': 'save', 'сохранить': 'save',
@@ -182,3 +181,6 @@ if __name__ == '__main__':
                 speech.speak(f"Opened link: {url}")
             else:
                 speech.speak(err)
+                
+
+

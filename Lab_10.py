@@ -10,6 +10,7 @@ from io import BytesIO
 import os
 import sys
 
+
 class Speech:
     def __init__(self, lang='ru'):
         self.tts = pyttsx3.init()

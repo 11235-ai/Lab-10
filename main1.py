@@ -2,8 +2,6 @@ import json, time
 
 import pyttsx3, pyaudio, vosk
 
-
-
 class Speech:
     def __init__(self):
         self.speaker = 0
